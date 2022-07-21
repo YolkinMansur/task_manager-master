@@ -1,0 +1,16 @@
+<div class="container">
+  <app-header></app-header>
+  <form action="">
+    <label>Тут что то есть</label>
+    <input name="text" [(ngModel)]="text" placeholder="..." type="text" />
+    <button (click)="addTasks(text)">Добавить</button>
+  </form>
+
+  <div class="form" *ngFor="let task of tasks">
+    <span>{{ task.name }}</span>
+    <button class="btn1" (click)="deleteProduct(task)">Удалить</button>
+  </div>
+
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
+</div>

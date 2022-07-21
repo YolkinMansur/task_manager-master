@@ -1,0 +1,36 @@
+ul {
+  display: flex;
+  padding: 20px ;
+  justify-content: space-between;
+}
+
+li{
+  list-style-type: none;
+
+}
+a{
+
+  text-decoration: none;
+  font-size: 24px;
+  color: #666;
+}
+
+a:hover{
+  font-weight: 600;
+  border-bottom:1px solid red ;
+}
+.main{
+  margin: 20px 60px;
+  width: 980px;
+  height: 180vh;
+
+}
+:host {
+  justify-content: center;
+ margin: 0 auto;
+  height:180vh ;
+  width: 500px;
+}
+nav{
+  background-color: lightblue;
+}
